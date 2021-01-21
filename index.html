@@ -1,0 +1,1009 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Texturina:wght@300&display=swap" rel="stylesheet">
+    <title>AMC store</title>
+<style>
+  @media(min-width: 576px){
+  .carousel-inner img{
+    height: 100vh;
+  }
+  .fornav{
+    position: absolute;
+    right: 10%;
+  }
+  .forhero{
+        margin-top: 350px;
+        font-size: 68px;
+        color: 
+  }
+}
+
+.hero{
+	min-height: 80vh;
+}
+ .forheading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffff;
+ }
+ #forherobtn{
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+.navbar-brand{
+font-family: 'Staatliches', cursive;
+  letter-spacing: 2px;
+  font-size: 32px;
+}
+
+
+
+ul#menu li {
+  display:inline;
+}
+.forhero{
+  font-family: 'Sofia', cursive;
+  line-height: 1.5;
+  letter-spacing: 2px;
+/*  padding-top: 30px;*/
+
+}
+.forcheck{
+  transform: translate(0%,35%);
+}
+.forcardimg{
+  margin-top: -30px;
+  border-radius: 5px;
+  transform: translateZ();
+}
+.forcardimg:hover{
+  transform: scaleY(1.1);
+}
+.forcard{
+  background: #ddd;
+}
+
+.forbutton{
+  border: 9px solid #fff;
+}
+.fornumber{
+  background: #ffc990;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  position: relative;
+}
+.fortestimonial{
+	  font-family: 'Sofia', cursive;
+	  color: #202529;
+	  font-size: 28px;
+}
+.forperfume{
+	font-weight: 400;
+}
+@media(max-width: 576px){
+
+  .forlogo{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .navbar-brand{
+    font-size: 6vw;
+  }
+  .forheroimg{
+    display:none;
+  }
+  .forcheck{
+      transform: translate(0%,0%);
+  }
+
+ /*  .forwp{
+    margin-right: 140px;
+  }*/
+}
+.forsvg{
+ background-color: #ffc990;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23ffc990' cx='50' cy='0' r='50'/%3E%3Cg fill='%23f1be88' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e2b381' cx='50' cy='100' r='50'/%3E%3Cg fill='%23d4a879' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c79d72' cx='50' cy='200' r='50'/%3E%3Cg fill='%23b9926a' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23ab8863' cx='50' cy='300' r='50'/%3E%3Cg fill='%239e7e5c' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23917355' cx='50' cy='400' r='50'/%3E%3Cg fill='%2384694e' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23785f47' cx='50' cy='500' r='50'/%3E%3Cg fill='%236b5640' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f4c39' cx='50' cy='600' r='50'/%3E%3Cg fill='%23534333' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23473a2c' cx='50' cy='700' r='50'/%3E%3Cg fill='%233c3126' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23312820' cx='50' cy='800' r='50'/%3E%3Cg fill='%2326201a' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%231c1813' cx='50' cy='900' r='50'/%3E%3Cg fill='%23110e0b' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23000000' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: contain;
+}
+.forproducts{
+  background: #ddd;
+  width: 250px;
+  height: 350px;
+}
+.forproducts img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.forsvg2{
+ background-color: #ffcd88;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1218' height='609' viewBox='0 0 1600 800'%3E%3Cpath fill='%23202529' d='M1102.5 734.8c2.5-1.2 24.8-8.6 25.6-7.5.5.7-3.9 23.8-4.6 24.5C1123.3 752.1 1107.5 739.5 1102.5 734.8zM1226.3 229.1c0-.1-4.9-9.4-7-14.2-.1-.3-.3-1.1-.4-1.6-.1-.4-.3-.7-.6-.9-.3-.2-.6-.1-.8.1l-13.1 12.3c0 0 0 0 0 0-.2.2-.3.5-.4.8 0 .3 0 .7.2 1 .1.1 1.4 2.5 2.1 3.6 2.4 3.7 6.5 12.1 6.5 12.2.2.3.4.5.7.6.3 0 .5-.1.7-.3 0 0 1.8-2.5 2.7-3.6 1.5-1.6 3-3.2 4.6-4.7 1.2-1.2 1.6-1.4 2.1-1.6.5-.3 1.1-.5 2.5-1.9C1226.5 230.4 1226.6 229.6 1226.3 229.1zM33 770.3C33 770.3 33 770.3 33 770.3c0-.7-.5-1.2-1.2-1.2-.1 0-.3 0-.4.1-1.6.2-14.3.1-22.2 0-.3 0-.6.1-.9.4-.2.2-.4.5-.4.9 0 .2 0 4.9.1 5.9l.4 13.6c0 .3.2.6.4.9.2.2.5.3.8.3 0 0 .1 0 .1 0 7.3-.7 14.7-.9 22-.6.3 0 .7-.1.9-.3.2-.2.4-.6.4-.9C32.9 783.3 32.9 776.2 33 770.3z'/%3E%3Cpath fill='%23ffffff' d='M171.1 383.4c1.3-2.5 14.3-22 15.6-21.6.8.3 11.5 21.2 11.5 22.1C198.1 384.2 177.9 384 171.1 383.4zM596.4 711.8c-.1-.1-6.7-8.2-9.7-12.5-.2-.3-.5-1-.7-1.5-.2-.4-.4-.7-.7-.8-.3-.1-.6 0-.8.3L574 712c0 0 0 0 0 0-.2.2-.2.5-.2.9 0 .3.2.7.4.9.1.1 1.8 2.2 2.8 3.1 3.1 3.1 8.8 10.5 8.9 10.6.2.3.5.4.8.4.3 0 .5-.2.6-.5 0 0 1.2-2.8 2-4.1 1.1-1.9 2.3-3.7 3.5-5.5.9-1.4 1.3-1.7 1.7-2 .5-.4 1-.7 2.1-2.4C596.9 713.1 596.8 712.3 596.4 711.8zM727.5 179.9C727.5 179.9 727.5 179.9 727.5 179.9c.6.2 1.3-.2 1.4-.8 0-.1 0-.2 0-.4.2-1.4 2.8-12.6 4.5-19.5.1-.3 0-.6-.2-.8-.2-.3-.5-.4-.8-.5-.2 0-4.7-1.1-5.7-1.3l-13.4-2.7c-.3-.1-.7 0-.9.2-.2.2-.4.4-.5.6 0 0 0 .1 0 .1-.8 6.5-2.2 13.1-3.9 19.4-.1.3 0 .6.2.9.2.3.5.4.8.5C714.8 176.9 721.7 178.5 727.5 179.9zM728.5 178.1c-.1-.1-.2-.2-.4-.2C728.3 177.9 728.4 178 728.5 178.1z'/%3E%3Cg fill-opacity='0.98' fill='%23FFF'%3E%3Cpath d='M699.6 472.7c-1.5 0-2.8-.8-3.5-2.3-.8-1.9 0-4.2 1.9-5 3.7-1.6 6.8-4.7 8.4-8.5 1.6-3.8 1.7-8.1.2-11.9-.3-.9-.8-1.8-1.2-2.8-.8-1.7-1.8-3.7-2.3-5.9-.9-4.1-.2-8.6 2-12.8 1.7-3.1 4.1-6.1 7.6-9.1 1.6-1.4 4-1.2 5.3.4 1.4 1.6 1.2 4-.4 5.3-2.8 2.5-4.7 4.7-5.9 7-1.4 2.6-1.9 5.3-1.3 7.6.3 1.4 1 2.8 1.7 4.3.5 1.1 1 2.2 1.5 3.3 2.1 5.6 2 12-.3 17.6-2.3 5.5-6.8 10.1-12.3 12.5C700.6 472.6 700.1 472.7 699.6 472.7zM740.4 421.4c1.5-.2 3 .5 3.8 1.9 1.1 1.8.4 4.2-1.4 5.3-3.7 2.1-6.4 5.6-7.6 9.5-1.2 4-.8 8.4 1.1 12.1.4.9 1 1.7 1.6 2.7 1 1.7 2.2 3.5 3 5.7 1.4 4 1.2 8.7-.6 13.2-1.4 3.4-3.5 6.6-6.8 10.1-1.5 1.6-3.9 1.7-5.5.2-1.6-1.4-1.7-3.9-.2-5.4 2.6-2.8 4.3-5.3 5.3-7.7 1.1-2.8 1.3-5.6.5-7.9-.5-1.3-1.3-2.7-2.2-4.1-.6-1-1.3-2.1-1.9-3.2-2.8-5.4-3.4-11.9-1.7-17.8 1.8-5.9 5.8-11 11.2-14C739.4 421.6 739.9 421.4 740.4 421.4zM261.3 590.9c5.7 6.8 9 15.7 9.4 22.4.5 7.3-2.4 16.4-10.2 20.4-3 1.5-6.7 2.2-11.2 2.2-7.9-.1-12.9-2.9-15.4-8.4-2.1-4.7-2.3-11.4 1.8-15.9 3.2-3.5 7.8-4.1 11.2-1.6 1.2.9 1.5 2.7.6 3.9-.9 1.2-2.7 1.5-3.9.6-1.8-1.3-3.6.6-3.8.8-2.4 2.6-2.1 7-.8 9.9 1.5 3.4 4.7 5 10.4 5.1 3.6 0 6.4-.5 8.6-1.6 4.7-2.4 7.7-8.6 7.2-15-.5-7.3-5.3-18.2-13-23.9-4.2-3.1-8.5-4.1-12.9-3.1-3.1.7-6.2 2.4-9.7 5-6.6 5.1-11.7 11.8-14.2 19-2.7 7.7-2.1 15.8 1.9 23.9.7 1.4.1 3.1-1.3 3.7-1.4.7-3.1.1-3.7-1.3-4.6-9.4-5.4-19.2-2.2-28.2 2.9-8.2 8.6-15.9 16.1-21.6 4.1-3.1 8-5.1 11.8-6 6-1.4 12 0 17.5 4C257.6 586.9 259.6 588.8 261.3 590.9z'/%3E%3Ccircle cx='1013.7' cy='153.9' r='7.1'/%3E%3Ccircle cx='1024.3' cy='132.1' r='7.1'/%3E%3Ccircle cx='1037.3' cy='148.9' r='7.1'/%3E%3Cpath d='M1508.7 297.2c-4.8-5.4-9.7-10.8-14.8-16.2 5.6-5.6 11.1-11.5 15.6-18.2 1.2-1.7.7-4.1-1-5.2-1.7-1.2-4.1-.7-5.2 1-4.2 6.2-9.1 11.6-14.5 16.9-4.8-5-9.7-10-14.7-14.9-1.5-1.5-3.9-1.5-5.3 0-1.5 1.5-1.5 3.9 0 5.3 4.9 4.8 9.7 9.8 14.5 14.8-1.1 1.1-2.3 2.2-3.5 3.2-4.1 3.8-8.4 7.8-12.4 12-1.4 1.5-1.4 3.8 0 5.3 0 0 0 0 0 0 1.5 1.4 3.9 1.4 5.3-.1 3.9-4 8.1-7.9 12.1-11.7 1.2-1.1 2.3-2.2 3.5-3.3 4.9 5.3 9.8 10.6 14.6 15.9.1.1.1.1.2.2 1.4 1.4 3.7 1.5 5.2.2C1510 301.2 1510.1 298.8 1508.7 297.2zM327.6 248.6l-.4-2.6c-1.5-11.1-2.2-23.2-2.3-37 0-5.5 0-11.5.2-18.5 0-.7 0-1.5 0-2.3 0-5 0-11.2 3.9-13.5 2.2-1.3 5.1-1 8.5.9 5.7 3.1 13.2 8.7 17.5 14.9 5.5 7.8 7.3 16.9 5 25.7-3.2 12.3-15 31-30 32.1L327.6 248.6zM332.1 179.2c-.2 0-.3 0-.4.1-.1.1-.7.5-1.1 2.7-.3 1.9-.3 4.2-.3 6.3 0 .8 0 1.7 0 2.4-.2 6.9-.2 12.8-.2 18.3.1 12.5.7 23.5 2 33.7 11-2.7 20.4-18.1 23-27.8 1.9-7.2.4-14.8-4.2-21.3l0 0C347 188.1 340 183 335 180.3 333.6 179.5 332.6 179.2 332.1 179.2zM516.3 60.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C517.3 60.4 516.8 60.8 516.3 60.8zM506.1 70.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C506.4 70.5 506.2 70.5 506.1 70.5zM494.1 64.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C494.7 64.3 494.4 64.4 494.1 64.4zM500.5 55.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C500.9 55.3 500.7 55.3 500.5 55.3zM506.7 55c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C507.4 54.8 507.1 55 506.7 55zM1029.3 382.8c-.1 0-.2 0-.4-.1-2.4-.7-4-.9-6.7-.7-.7 0-1.3-.5-1.4-1.2 0-.7.5-1.3 1.2-1.4 3.1-.2 4.9 0 7.6.8.7.2 1.1.9.9 1.6C1030.3 382.4 1029.8 382.8 1029.3 382.8zM1019.1 392.5c-.5 0-1-.3-1.2-.8-.8-2.1-1.2-4.3-1.3-6.6 0-.7.5-1.3 1.2-1.3.7 0 1.3.5 1.3 1.2.1 2 .5 3.9 1.1 5.8.2.7-.1 1.4-.8 1.6C1019.4 392.5 1019.2 392.5 1019.1 392.5zM1007.1 386.4c-.4 0-.8-.2-1-.5-.4-.6-.3-1.4.2-1.8 1.8-1.4 3.7-2.6 5.8-3.6.6-.3 1.4 0 1.7.6.3.6 0 1.4-.6 1.7-1.9.9-3.7 2-5.3 3.3C1007.7 386.3 1007.4 386.4 1007.1 386.4zM1013.5 377.3c-.5 0-.9-.3-1.2-.7-.5-1-1.2-1.9-2.4-3.4-.3-.4-.7-.9-1.1-1.4-.4-.6-.3-1.4.2-1.8.6-.4 1.4-.3 1.8.2.4.5.8 1 1.1 1.4 1.3 1.6 2.1 2.6 2.7 3.9.3.6 0 1.4-.6 1.7C1013.9 377.3 1013.7 377.3 1013.5 377.3zM1019.7 377c-.3 0-.5-.1-.8-.2-.6-.4-.7-1.2-.3-1.8 1.2-1.7 2.3-3.4 3.3-5.2.3-.6 1.1-.9 1.7-.5.6.3.9 1.1.5 1.7-1 1.9-2.2 3.8-3.5 5.6C1020.4 376.8 1020.1 377 1019.7 377zM1329.7 573.4c-1.4 0-2.9-.2-4.5-.7-8.4-2.7-16.6-12.7-18.7-20-.4-1.4-.7-2.9-.9-4.4-8.1 3.3-15.5 10.6-15.4 21 0 1.5-1.2 2.7-2.7 2.8 0 0 0 0 0 0-1.5 0-2.7-1.2-2.7-2.7-.1-6.7 2.4-12.9 7-18 3.6-4 8.4-7.1 13.7-8.8.5-6.5 3.1-12.9 7.4-17.4 7-7.4 18.2-8.9 27.3-10.1l.7-.1c1.5-.2 2.9.9 3.1 2.3.2 1.5-.9 2.9-2.3 3.1l-.7.1c-8.6 1.2-18.4 2.5-24 8.4-3 3.2-5 7.7-5.7 12.4 7.9-1 17.7 1.3 24.3 5.7 4.3 2.9 7.1 7.8 7.2 12.7.2 4.3-1.7 8.3-5.2 11.1C1335.2 572.4 1332.6 573.4 1329.7 573.4zM1311 546.7c.1 1.5.4 3 .8 4.4 1.7 5.8 8.7 14.2 15.1 16.3 2.8.9 5.1.5 7.2-1.1 2.7-2.1 3.2-4.8 3.1-6.6-.1-3.2-2-6.4-4.8-8.3C1326.7 547.5 1317.7 545.6 1311 546.7z'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+}
+ @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+ .container-fluid {
+     overflow: hidden;
+     margin-top: 250px;
+     background: #262626;
+     color: #fffcd8 !important;
+     margin-bottom: 0;
+     padding-bottom: 0
+ }
+
+ small {
+     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .bold-text {
+     color: #989c9e !important
+ }
+
+ .mt-55 {
+     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ h3 {
+     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .social {
+     font-size: 21px !important
+ }
+
+ .rights {
+     font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+
+.responsive{
+
+	column-gap: 30px;
+}
+</style>
+  </head>
+  <body>
+     <nav class="navbar navbar-expand-lg navbar-light  py-lg-3 py-sm-1" style="background: #ffcd88;">
+      <div class="container">
+
+        <img src="img/logo3.jpg" class=" forlogo px-2 navbar-logo">
+           <a class="navbar-brand forbrand " href="#" style="color: #202529;">AMC Store<h6> &nbsp;attar & perfume</h6></a>
+  <ul id="menu">
+  <li class="forwp mx-lg-2 mx-4"><img src="img/bag.png">cart</li>
+  <li class="mx-lg-0 mx-5"><a class="btn btn-light" href="https://wa.me/9537206754"><img src="img/wp.png"> Chat</a>
+</li>
+
+</ul> 
+</div>
+</nav>
+    <div>
+        <section class="hero pb-3 pl-5 bg-cover bg-center d-flex align-items-center" style="background: url(img/hero17.jpeg); width: 100%; background-size: cover;">
+          <div class="container py-5">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-12">
+                
+                <h1 class="forhero text-center">Make your unique personality<br> with our fragrance.</h1>
+   <button class="btn btn-warning" id="forherobtn">Shop now</button>
+
+<!--  <div class="searchBox">
+
+            <input class="searchInput"type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div> -->
+             
+</div>
+            </div>
+          </div>
+        </section>
+</div>
+<!-- <div class="pt-5 maindiv">
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-6 col-md-5">
+        <img src="img/hero17.jpeg" class="img-fluid forheroimg" style="border-radius: 5px; box-shadow: 2px 3px 2px 3px #C3FCF2;">
+    </div>
+
+    <div class="col-lg-6 col-md-7 forcheck">
+      <h2 class="forhero">Make your unique identity<br> with our fragrance.</h2>
+   <button class="btn btn-warning">Shop now</button>
+    </div>
+
+
+  </div>
+
+
+</div>
+
+</div> -->
+
+<div style="margin-top: 50px;"></div>
+<div class="forsvg"> 
+<div class="container py-5  mb-5">
+  <h2 class="text-center pb-3" style="  font-family: 'Texturina', serif;">What's the mood to purchase?</h2>
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+  <button class="navbar-toggler mx-auto text-white forbutton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    Categories
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+ 
+  <h6 class="text-center" style="font-family: 'Sofia', cursive; font-size: 25px; line-height: 2; color: #ffcd88;">
+
+  <ul class="nav nav-pills responsive">
+
+        <li class="active"><a data-toggle="pill" href="#home" style="color: #ffcd88">Attar</a></li> 
+    <li><a data-toggle="pill" href="#menu1" style="color: #ffcd88">Perfume spray</a></li> 
+    <li><a data-toggle="pill" href="#menu2" style="color: #ffcd88">Roll on</a></li> 
+    <li><a data-toggle="pill" href="#menu1" style="color: #ffcd88">Pocket shot</a></li> 
+      <li><a data-toggle="pill" href="#menu2" style="color: #ffcd88">Lotion</a></li> 
+    <li><a data-toggle="pill" href="#menu1" style="color: #ffcd88">Oudh</a></li> 
+    <li><a data-toggle="pill" href="#menu2" style="color: #ffcd88">Bukhur</a></li> 
+        <li><a data-toggle="pill" href="#menu1" style="color: #ffcd88">Air freshener</a></li> 
+
+  </ul>
+  </h6>
+  </div>
+</nav>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in">
+
+  <div class="row mt-5">
+     
+      <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                     <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                    <button type="button" class="btn btn-warning mt-2" data-toggle="modal" data-target="#myModal">Buy Now</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">My bag</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+       <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Sub total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+        <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+        <td>&#8377 650</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="menu1" class="tab-pane fade active">
+        <div class="row mt-5">
+     
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Cotton musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Cotton musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                     <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                          <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Cotton musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+  <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+<div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Cotton musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                    <button type="button" class="btn btn-warning mt-2" data-toggle="modal" data-target="#myModal">Buy Now</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">My bag</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+       <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Sub total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+        <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+        <td>&#8377 650</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>     -
+    </div>
+ <div id="menu2" class="tab-pane fade">
+
+  <div class="row mt-5">
+     
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                     <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                          <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+  <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+<div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    
+                      <!-- <label><input type="radio" name="btn"></label> -->
+                    </a>
+                    <button type="button" class="btn btn-warning mt-2" data-toggle="modal" data-target="#myModal">Buy Now</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">My bag</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+       <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Sub total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+        <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+        <td>&#8377 650</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          </div>     -
+    </div>
+    </div>
+<!--   <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div> -->
+
+
+<!--  <div class="row mt-5">
+      <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                  <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                    <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                     <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                      <label><input type="radio" name="btn"></label>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                     <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+                          <div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+  <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    <button class="btn btn-warning">Buy now</button>
+                    </a>
+                  </div>
+                </div>
+            </div>
+          </div>
+<div class="col-lg-3 mt-5 mb-5 d-flex justify-content-center">
+        <div class="card px-4 forcard" style="width: 18rem;">
+           <img class="card-img-top forcardimg" src="img/p1.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Silk musk (12ml)</h5>
+                  <p class="card-text">Light fragnance</p>
+                  <div class="card-text">&#8377; 650</div>
+                      <div class="d-flex justify-content-center">
+                    <a href="#" class="mt-2">
+                    
+                    </a>
+                    <button type="button" class="btn btn-warning mt-2" data-toggle="modal" data-target="#myModal">Buy Now</button>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">My bag</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+        </div>
+        <div class="modal-body">
+       <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+            <th scope="col">Quantity</th>
+      <th scope="col">Price</th>
+      <th scope="col">Sub total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+      <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+        <td>&#8377 650</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+        <td>&#8377 650</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+       </div> -->
+     </div>
+   </div>
+ </div>
+
+<div class="my-5">
+  <div class="container ">
+      <h2 class="text-center pb-3" style="  font-family: 'Texturina', serif;">Best way to apply perfume</h2>
+     <div class="row mt-5  d-flex justify-content-center">
+      <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card px-4" style="outline: none; border: none; width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                       <button class="fornumber text-white">1</button>
+                </h5>
+                
+                  <div class="card-text">
+                <h5 class="text-center forperfume">Don’t rub your wrists together after applying perfume</h5>
+                </div>
+                </div>
+            </div>
+          </div>
+      <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card px-4" style="outline: none; border: none; width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                       <button class="fornumber text-white">2</button>
+                </h5>
+                
+                  <div class="card-text">
+                <h5 class="text-center forperfume">Apply perfume on your pulse points</h5>
+                </div>
+                </div>
+            </div>
+          </div>
+              <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card px-4" style="outline: none; border: none; width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                       <button class="fornumber text-white">3</button>
+                </h5>
+                
+                  <div class="card-text">
+                <h5 class="text-center forperfume">Apply perfume right after taking a shower</h5>
+                </div>
+                </div>
+            </div>
+          </div>
+               <div class="col-lg-3 d-flex justify-content-center">
+        <div class="card px-4" style="outline: none; border: none; width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">
+                       <button class="fornumber text-white">4</button>
+                </h5>
+                
+                  <div class="card-text">
+                <h5 class="text-center forperfume">Spray perfume on top of your ears</h5>
+                </div>
+                </div>
+            </div>
+          </div>
+
+     </div>
+  </div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+      <h3 class="text-center mb-5"  style="  font-family: 'Texturina', serif;">Testimonals</h3>
+  <div class="carousel-inner forsvg2">
+
+    <div class="carousel-item active" style="height: 300px;">
+      <div class="d-flex justify-content-center">
+        <img src="img/avtar.svg" style="width:120px; height:120px;  margin-top: 40px;">
+ <div class="carousel-caption">
+    <h5 class="text-center fortestimonial">Love the product of this website </h5>
+  </div> 
+     </div>
+  </div>
+    <div class="carousel-item" style="height: 300px;">
+       <div class="d-flex justify-content-center">
+        <img src="img/avtar.svg" style="width:120px; height:120px;  margin-top: 40px;">
+       <div class="carousel-caption">
+    <h5 class="text-center fortestimonial">Love the product of this website </h5>
+  </div> 
+    </div>
+    </div>
+    <div class="carousel-item" style="height: 300px; ">
+  <div class="d-flex justify-content-center">
+        <img src="img/avtar.svg" style="width: 120px; height: 120px; margin-top: 40px;">
+       <div class="carousel-caption">
+    <h5 class="text-center fortestimonial">Love the product of this website </h5>
+  </div> 
+    </div> 
+       </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+ <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                         <h3 class="text-muted mb-md-0 mb-5 bold-text">AMC store - Attar & Perfume.</h3>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                         <ul class="list-unstyled">
+                             <li>Home</li>
+                             <li>About</li>
+                             <li>Blog</li>
+                             <li>Portfolio</li>
+                         </ul>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                         <p class="mb-1">605, RATAN ICON BUILDING</p>
+                         <p>SEAWOODS SECTOR</p>
+                     </div>
+                 </div>
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> AMC store All Rights Reserved.</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>ANIRUDH SINGLA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>RISHABH SHEKHAR</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> rishab@gmail.com</small>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </footer>
+ </div>
+  </body>
+</html>
