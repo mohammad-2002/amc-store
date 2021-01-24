@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Yeon+Sung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Courgette&display=swap" rel="stylesheet">
+    <title>Ideal Refrigation</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .navbar-brand{
+        font-family: 'Yeon Sung', cursive;
+        position: absolute;
+        left: 40%;
+        font-size: 42px;
+        color: #fecd1a;
+        text-decoration: none;
+            }
+.navbar-brand:hover{
+  color: #ddd;
+}
+      .hero {
+       min-height: 100vh;
+         font-family: 'Comfortaa', cursive;  
+}
+.navbar-nav a{
+  color: #fecd1a;
+  font-family: 'Comfortaa', cursive;
+
+}
+.navbar-nav a:hover{
+  color: #ddd;
+}
+.container-2{
+  width: 1100px;
+}
+.formargin{
+ 
+      margin-left:700px;
+}
+
+
+.searchBox {
+    position: absolute;
+    top: 75%;
+    background: #fff;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+
+}
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: #fecd1a;
+  color : #255d7d;
+}
+
+.searchButton {
+    color: #fecd1a;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #255d7d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: #000;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+.navbar-brand{
+          left: 0%;
+        font-size: 24px;
+}
+.formargin{
+      margin-left:0px;
+}
+.hero{
+  min-height: 50vh;
+}
+.searchBox{
+  top: 45%;
+}
+}
+.categoryTableArea {
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  color: #000;
+
+}
+.categoryArea {
+  flex: 1;
+  min-width: 150px;
+  max-width: 220px;
+  margin:0px;
+  float: left;
+}
+
+.categoryIcon {
+  width: 150px;
+  height: 150px;
+  background-color: #000;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-radius: 50%;
+}
+.categoryIcon img{
+   margin-top: 0px;
+   margin-left: 0px;
+    width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.categoryName {
+  color: #000;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+          font-family: 'Comfortaa', cursive;
+          text-decoration: none;
+          padding-top: 5px;
+        
+
+}
+
+.categoryIcon img:hover{
+  transform: scale(1.1);
+}
+.hero2{
+min-height:120vh;  
+}
+.forheading{
+     font-family: 'Comfortaa', cursive;
+     color: #fecd1a;  
+}
+.forheading2{
+     font-family: 'Comfortaa', cursive;
+     color: #2557d7;  
+}
+.forbtn{
+  width: 120px;
+  height: 120px;
+  background: #fecd1a;
+  color: #fff;
+       font-family: 'Comfortaa', cursive;
+
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 50px; 
+  box-shadow: 4px 4px 2px 5px #dddddd;
+}
+.forbtn:hover{
+   background: #96bb7c;
+     box-shadow: -4px -4px 2px 5px #dddddd;
+
+}
+.forbtn2{
+  width: 120px;
+  height: 120px;
+  background: #6b85be;
+  color: #fff;
+       font-family: 'Comfortaa', cursive;
+
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 50px; 
+  box-shadow: 4px 4px 2px 5px #dddddd;
+  transform: 2s  all ease;
+}
+.forbtn2:hover{
+   background: #96bb7c;
+     box-shadow: -4px -4px 2px 5px #dddddd;
+}
+.forabout{
+  padding-top: 110px;
+  background: #455A64;
+}
+.forabout2{
+  line-height: 1.6;
+}
+.fortestimonal{
+  width: 300px;
+  height: 350px;
+  border: 2px solid #6b85be;
+  border-radius: 20px;
+  background: #96bb7c;
+}
+.fortestimonal2{
+           font-family: 'Courgette', cursive;
+           font-size: 20px;
+             color: #fff;
+}
+ @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+ body {
+/*     background: linear-gradient(0deg, #fff, 50%, #DEEEFE);
+*/     font-family: 'Rubik', sans-serif;
+/*     background: #455A64;
+*/     height: 100 !important
+ }
+
+ .container-fluid {
+     overflow: hidden;
+     margin-top: 250px;
+     background: #262626;
+     color: #627482 !important;
+     margin-bottom: 0;
+     padding-bottom: 0
+ }
+
+ small {
+     font-size: calc(12px + (15 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .bold-text {
+     color: #989c9e !important
+ }
+
+ .mt-55 {
+     margin-top: calc(50px + (60 - 50) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ h3 {
+     font-size: calc(34px + (40 - 34) * ((100vw - 360px) / (1600 - 360))) !important
+ }
+
+ .social {
+     font-size: 21px !important
+ }
+    </style>
+  </head>
+  <body>
+    <div style="background: #255d7d;" class="py-2">
+    <div class="container">
+    <nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand " href="#">Ideal Refrigation</a>
+  <button class="navbar-toggler mx-auto" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#ac">Air Conditioner</a>
+      <a class="nav-item nav-link" href="#ref">Refrigerator</a>
+
+                        <a class="nav-item nav-link formargin" href="#tv">Television</a>
+                        <a class="nav-item nav-link" href="#wm">Washing Machine</a>
+
+</div>
+</div>
+</nav>
+</div>
+</div>
+    <div>
+        <section class="hero pb-3 pl-5 bg-cover bg-center d-flex align-items-center" style="background: url(img/ideal3.jpg); width: 100%;">
+          <div class="container container-2 py-5">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-4">
+                
+                
+                <h1 class=" text-uppercase mb-3"style="color:#fff">BUY FROM WHERE YOU FEEL <span style="color: #fecd1a;">TRUSTED  & SAFE</span>
+ </h1>
+                                <a class="btn btn-light" href="https://wa.me/9537206754"><img src="img/wp.png"> Chat with us</a>
+
+ <div class="searchBox">
+
+            <input class="searchInput"type="text" name="" placeholder="Search">
+            <button class="searchButton" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+             
+</div>
+            </div>
+          </div>
+        </section>
+</div>
+<div class="mt-0 py-5">
+    <div class="container">
+    <h1 class="text-center  mb-4" style="font-family: 'Yeon Sung', cursive; color: #255d7d;">Awa<span style="color: #fecd1a;">rds</span></h1>
+
+ <div class="categoryTableArea">
+
+    <div class="categoryArea ">
+     <a href="category.html">
+      <div class="categoryIcon">
+        <img src="img/awards2.jpg">
+      </div>
+       <p class=categoryName>By LG</p>
+   </a>
+    </div>
+
+
+    <div class="categoryArea  p-2">
+     <a href="category.html">
+      <div class="categoryIcon">
+        <img src="img/awards3.jpg">
+      </div>
+      <p class=categoryName>By LLOYD</p>
+  </a>
+    </div>
+
+    <div class="categoryArea  p-2">
+      <a href="category.html">
+      <div class="categoryIcon">
+        <img src="img/awards2.jpg">
+      </div>
+      <p class=categoryName>By Mitsubishi</p>
+</a>
+    </div>
+
+
+    <div class="categoryArea p-2">
+      <a href="category.html">
+      <div class="categoryIcon">
+                <img src="img/awards3.jpg">
+      </div>
+      <p class=categoryName>By Whirlpool</p>
+   </a>
+    </div>
+  
+  </div>
+</div>
+</div>
+
+
+ <div id="ac">
+        <section class="hero2 pb-3 pl-5 bg-cover bg-center d-flex align-items-center" style="background: url(img/ac5.jpg); background-repeat: no-repeat; background-size: cover;">
+          <div class="container container-2">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-6">
+                                
+          <h1 style="font-family: 'Yeon Sung', cursive; color:#fecd1a;" class="display-4">&nbsp;Air Conditioner</h1>
+          <h5 class="py-3 forheading">Activating Inner joy of Satisfaction</h5>
+          <h6 class="pt-5 forheading">Brands  for AC :-</h6>
+                    <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">mitsubishi</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">lloyd</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">o general</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">Amstard</h5></li>
+                   <button class="btn forbtn">Check Out</button>
+    
+            </div>
+
+          </div>
+        </section>
+      </div>
+       <div id="ref">
+        <section class="hero2 pb-3 pl-5 bg-cover bg-center d-flex align-items-center" style="background: url(img/fridge6.jpg); background-repeat: no-repeat; background-size: cover;">
+          <div class="container container-2">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-6">
+                                
+          <h1 style="font-family: 'Yeon Sung', cursive; color:#2557d7;" class="display-4">&nbsp;&nbsp;Refrigerator</h1>
+          <h5 class="py-3 forheading2">Activating Inner joy of Satisfaction</h5>
+          <h6 class="pt-5 forheading2">Brands  for Refrigerator :-</h6>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading2 text-uppercase" style="letter-spacing: 2px;"><img src="img/icons8-sphere-24.png" class="px-2">lloyd</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading2 text-uppercase" style="letter-spacing: 2px;"><img src="img/icons8-sphere-24.png" class="px-2">lg</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading2 text-uppercase" style="letter-spacing: 2px;"><img src="img/icons8-sphere-24.png" class="px-2">whirlpool</h5></li>
+                   <button class="btn forbtn2">Check Out</button>
+    
+            </div>
+
+          </div>
+        </section>
+      </div>
+       <div id="wm">
+        <section class="hero2 pb-3 pl-5 bg-cover bg-center d-flex align-items-center" style="background: url(img/wm2.jpg); background-repeat: no-repeat; background-size: cover;">
+          <div class="container container-2">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-6">
+                                
+          <h1 style="font-family: 'Yeon Sung', cursive; color:#fecd1a;" class="display-4">Washing Machine</h1>
+          <h5 class="py-3 forheading">Activating Inner joy of Satisfaction</h5>
+          <h6 class="pt-5 forheading">Brands  for WM :-</h6>
+                    <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">lg</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">lloyd</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading text-uppercase" style="letter-spacing: 2px;"><img src="img/list3.png" class="px-2">whirlpool</h5></li>
+                   <button class="btn forbtn">Check Out</button>
+    
+            </div>
+
+          </div>
+        </section>
+      </div>
+
+             <div id="tv">
+        <section class="hero2 pb-3 pl-5 bg-cover bg-center d-flex align-items-center" style="background: url(img/tv10.jpg); background-repeat: no-repeat; background-size: cover;">
+          <div class="container container-2">
+            <div class="row px-4 px-lg-5">
+              <div class="col-lg-6">
+                                
+          <h1 style="font-family: 'Yeon Sung', cursive; color:#2557d7;" class="display-4">&nbsp; &nbsp;Television</h1>
+          <h5 class="py-3 forheading2">Activating Inner joy of Satisfaction</h5>
+          <h6 class="pt-5 forheading2">Brands  for Television :-</h6>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading2 text-uppercase" style="letter-spacing: 2px;"><img src="img/icons8-sphere-24.png" class="px-2">lloyd</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading2 text-uppercase" style="letter-spacing: 2px;"><img src="img/icons8-sphere-24.png" class="px-2">lg</h5></li>
+                   <li style="list-style: none;" class="py-4"><h5 class="forheading2 text-uppercase" style="letter-spacing: 2px;"><img src="img/icons8-sphere-24.png" class="px-2">amstard</h5></li>
+                   <button class="btn forbtn2">Check Out</button>
+    
+            </div>
+
+          </div>
+        </section>
+      </div>
+      <div style="background: #455A64;">
+      <div class="container">
+        <div class="row forabout">
+          <div class="col-lg-6">
+            <h2 style="font-family: 'Yeon Sung', cursive; color:#fff;" class="display-4 mb-4">About <span class="forheading"> me</span></h2>
+          <span style="font-family: 'Comfortaa', cursive; letter-spacing: 2px; color: #ddd;"><h4 class="forabout2">Hi, Myself <span style="color: #fecd1a;">Burhan Kathiriya.</span>I would like you to welcome you  on my online shop.I hope you like my online shop and i am pretty sure that you will purchase some products from my online shop.</h4></span>
+            <h5 class="py-2">For business query :-<br>
+             <i class="fa fa-envelope py-3" aria-hidden="true">&nbsp; <span class="forheading2" style="color: #ddd;">burhan.kathiria@yahoo.in</span></i><br>
+            <i class="fa fa-phone py-2" aria-hidden="true">&nbsp; <span class="forheading2" style="color: #ddd;">+91, 978586398</span></i>
+            </h5>
+          </div>
+          <div class="col-lg-6 ">
+            <img src="img/about2.jpg" class="img-fluid  order-3">
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container mt-5 pt-5">
+  <h1 class="text-center pb-5" style="font-family: 'Yeon Sung', cursive; color:#34626c;">Customer has his say...</h1>
+  <div class="row">
+    <div class="col-lg-3 d-flex justify-content-center mb-3">
+      <div class="fortestimonal">
+        <h4 class="text-center p-2 pb-0" style="font-family: 'Comfortaa', cursive; font-size: 20px; color: #34626c;"><img src="img/aboutus.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> mohammadkatwara</h4><hr>
+        <div class="fortestimonal2">
+          <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        </div> <hr>
+        <div class="fortestimonal3 d-flex justify-content-center">
+          <span class="px-3"><img src="img/heart.png"></span>
+            <span class="px-3"><img src="img/forward.png"></span>
+        </div>
+      </div>
+    </div>
+        <div class="col-lg-3 d-flex justify-content-center mb-3">
+      <div class="fortestimonal">
+        <h4 class="text-center p-2 pb-0" style="font-family: 'Comfortaa', cursive; font-size: 20px; color: #34626c;"><img src="img/aboutus.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> mohammadkatwara</h4><hr>
+        <div class="fortestimonal2">
+          <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        </div> <hr>
+        <div class="fortestimonal3 d-flex justify-content-center">
+          <span class="px-3"><img src="img/heart.png"></span>
+            <span class="px-3"><img src="img/forward.png"></span>
+        </div>
+      </div>
+    </div>
+        <div class="col-lg-3 d-flex justify-content-center mb-3">
+      <div class="fortestimonal">
+        <h4 class="text-center p-2 pb-0" style="font-family: 'Comfortaa', cursive; font-size: 20px; color: #34626c;"><img src="img/aboutus.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> mohammadkatwara</h4><hr>
+        <div class="fortestimonal2">
+          <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        </div> <hr>
+        <div class="fortestimonal3 d-flex justify-content-center">
+          <span class="px-3"><img src="img/heart.png"></span>
+           <span class="px-3"><img src="img/forward.png"></span>
+        </div>
+      </div>
+    </div>
+        <div class="col-lg-3 d-flex justify-content-center mb-3">
+      <div class="fortestimonal">
+        <h4 class="text-center p-2 pb-0" style="font-family: 'Comfortaa', cursive; font-size: 20px; color: #34626c;"><img src="img/aboutus.jpg" style="width: 30px; height: 30px; border-radius: 50%;"> mohammadkatwara</h4><hr>
+        <div class="fortestimonal2">
+          <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        </div> <hr>
+        <div class="fortestimonal3 d-flex justify-content-center">
+          <span class="px-3"><img src="img/heart.png"></span>
+             <span class="px-3"><img src="img/forward.png"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+     <footer>
+         <div class="row my-5 justify-content-center py-5">
+             <div class="col-11">
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                         <h3 class="text-muted mb-md-0 mb-5 bold-text">IDEAL REFRIGATION.</h3>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 bold-text "><b>PRODUCTS</b></h6>
+                         <ul class="list-unstyled">
+                             <li>AC</li>
+                             <li>REFRIGERATOR</li>
+                             <li>TV</li>
+                             <li>WASHING MACHINE</li>
+                         </ul>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                         <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                         <p class="mb-1">605, RATAN ICON BUILDING</p>
+                         <p>SEAWOODS SECTOR</p>
+                     </div>
+                 </div>
+                 <div class="row ">
+                     <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                         <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i class="fa fa-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-twitter" aria-hidden="true"></i></span> <span class="mx-2"><i class="fa fa-instagram" aria-hidden="true"></i></span> </p><small class="rights"><span>&#174;</span> Ideal refrigation All Rights Reserved.</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                         <h6 class="mt-55 mt-2 text-muted bold-text"><b>BURHAN KATHIRIYA</b></h6><small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> abc@gmail.com</small>
+                     </div>
+                     <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                         <h6 class="text-muted bold-text"><b>MOHAMMAD KATWARA</b></h6><small><span><i class="fa fa-envelope" aria-hidden="true"></i></span> mkatwara791@gmail.com</small>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </footer>
+<!-- <div style="margin-bottom: 1000px;"></div> -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+<!--     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+<!--     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+    
+  </body>
+</html>
